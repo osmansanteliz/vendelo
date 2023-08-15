@@ -52,6 +52,10 @@ en:
               blank: 'Cannot be blank'          
   common:
     confirm: '¿Are you sure?'
+    back: 'Go Back'
+  shared:
+    header:
+      add: 'Add Product'  
   products:
     edit:
       title: 'Edit Product'
@@ -59,9 +63,30 @@ en:
       title: 'Add Product'
     index:
       title: 'Products:'
+    show:
+      edit: 'Edit Product'
+      delete: 'Delete Product'  
     create:
       created: 'Your product has been created successfully'
     update:
       updated: 'Your product has been successfully updated'
     destroy:
-      destroyed: 'Your product has been successfully removed'          
+      destroyed: 'Your product has been successfully removed'
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+      new: 'Add Category'
+    edit:
+      title: 'Edit Category'
+    create:
+      created: 'Your category has been successfully created'
+    update:
+      updated: 'Your category has been successfully updated'
+    destroy:
+      destroyed: 'Your category has been successfully destroyed'
+
+    new:
+      title: 'New Category'  
