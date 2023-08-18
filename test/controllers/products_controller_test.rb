@@ -30,7 +30,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 			product: {
 				titel: 'Nintendo 64',
 				description: 'Le faltan los cables',
-				price: 45
+				price: 45,
+				category_id: categories(:videogames).id
 			}
 		}
 
