@@ -63,6 +63,7 @@ en:
       title: 'Add Product'
     index:
       title: 'Products:'
+      all: 'All'
     show:
       edit: 'Edit Product'
       delete: 'Delete Product'  

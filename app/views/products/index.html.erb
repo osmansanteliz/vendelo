@@ -1,3 +1,11 @@
-<h1> <%= t('.title') %> </h1>
+<%= turbo_frame_tag 'categories' do #turbo _top solo actualiza la seccion, no toda la pagina %>
 
-<%= render partial: 'product', collection: @products %>
+	<h1> <%= t('.title') %> </h1>
+
+	<%= link_to t('.all'), products_path %>
+
+	<%= render partial: 'category', collection: @categories %>
+
+	<%= render partial: 'product', collection: @products %>
+
+<% end -%>
