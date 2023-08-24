@@ -1,4 +1,10 @@
 class Product < ApplicationRecord
+	include PgSearch::Model
+	pg_search_scope :search_full_text, against: {
+		titel: 'A',
+		description: 'B'
+	}
+
 	has_one_attached :photo
 
 	validates :titel, presence: true
