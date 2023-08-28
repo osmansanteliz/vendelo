@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
 	def index
 		@categories = Category.order(name: :asc).load_async #load_async ejecuta consultas a la vez
 		
-		@pagy, @products = pagy_countless(FindProducts.new.call(params).load_async, items: 4)		
+		@pagy, @products = pagy_countless(FindProducts.new.call(product_params_index).load_async, items: 4)		
 	end
 
 	def show
@@ -48,6 +48,10 @@ class ProductsController < ApplicationController
 	def product_params
 		params.require(:product).permit(:titel, :description, :price, :photo, :category_id)
 	end	
+
+	def product_params_index
+		params.permit(:category_id, :min_price, :max_price, :query_text, :order_by)	
+	end
 
 	def product
 		@product = Product.find(params[:id])
