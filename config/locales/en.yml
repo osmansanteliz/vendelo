@@ -57,7 +57,11 @@ en:
     back: 'Go Back'
   shared:
     header:
-      add: 'Add Product'  
+      add: 'Add Product'
+  authentication:
+    users:
+      create:
+        created: 'Your account has been created!'      
   products:
     edit:
       title: 'Edit Product'
