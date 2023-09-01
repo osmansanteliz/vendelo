@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
+
+	def setup
+		login
+	end
+
 	test 'render a list of product' do
 		get products_path
 

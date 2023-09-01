@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+	skip_before_action :protect_pages, only: [:index, :show]
 
 	def index
 		@categories = Category.order(name: :asc).load_async #load_async ejecuta consultas a la vez
