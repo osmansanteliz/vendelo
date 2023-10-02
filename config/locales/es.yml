@@ -4,12 +4,20 @@ es:
   activerecord:
     models:
       product: Producto
+      user: Usuario
+      category: Categoria
     attributes:
       product:
         titel: 'Titulo'
         description: 'Descripción'
         price: 'Precio'
         photo: 'Foto'
+      user:
+        email: 'Correo Electrónico'
+        username: 'Usuario'
+        password: 'Contraseña'  
+      category:
+        name: 'Nombre'  
     errors:
       models:
         product:
@@ -27,6 +35,9 @@ es:
   shared:
     header:
       add: 'Añadir Producto'
+      login: 'Acceder'
+      register: 'Registro'
+      logout: 'Cerrar Sesión'
   authentication:
     users:
       create:
@@ -34,7 +45,9 @@ es:
     sessions:
       create:
         created: 'Bienvenido!'  
-        failed: 'Login Invalido'      
+        failed: 'Login Invalido'  
+      destroy:
+        destroyed: 'Cerraste Sesión. Bye!'      
   products:
     edit:
       title: 'Editar Producto'

@@ -4,7 +4,7 @@
 <p class='description'><%= @product.description %></p>
 <span class='price'><%= @product.price %>$</span>
 <div>
-	<%= link_to 'Editar Producto', edit_product_path(@product) %>
+	<%= link_to 'Editar Producto', edit_product_path(@product) if @product.user == Current.user %>
 </div>
 
 <div>
