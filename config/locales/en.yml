@@ -64,6 +64,7 @@ en:
     confirm: '¿Are you sure?'
     back: 'Go Back'
     not_logged_in: 'You have to login or create an account'
+    not_authorized: 'You do not have permission for this action'
   shared:
     header:
       add: 'Add Product'

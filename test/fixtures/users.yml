@@ -4,6 +4,7 @@ os:
   email: osanteliz88@gmail.com
   username: srosh
   password_digest: <%= BCrypt::Password.create('Nicaragua', cost: 5) %>
+  admin: true
 
 two:
   email: osmansant@hotmail.com
