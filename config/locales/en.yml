@@ -65,6 +65,7 @@ en:
     back: 'Go Back'
     not_logged_in: 'You have to login or create an account'
     not_authorized: 'You do not have permission for this action'
+    not_found: 'Not found'
   shared:
     header:
       add: 'Add Product'
@@ -98,6 +99,7 @@ en:
     show:
       edit: 'Edit Product'
       delete: 'Delete Product'  
+      view_more_products: 'View more products of %{username}'
     create:
       created: 'Your product has been created successfully'
     update:
