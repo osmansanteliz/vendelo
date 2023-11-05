@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+srosh_ps4_fat:
+  user: srosh
+  product: ps4 fat
+
+two:
+  user: two
+  product: two
