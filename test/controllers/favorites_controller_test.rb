@@ -4,6 +4,7 @@ class FavoritesControllerTest < ActionDispatch::IntegrationTest
 	setup do
 		login
 		@product = products(:ps4 fat)
+		@ps4 fat = products(:ps4 fat)
 	end
 	
 	test "should create favorite" do
@@ -12,5 +13,13 @@ class FavoritesControllerTest < ActionDispatch::IntegrationTest
 		end	
 
 		assert_redirected_to product_path(@product)
+	end	
+
+	test "should unfavorite" do
+		assert_difference('Favorite.count', -1) do
+			delete favorite_url(@ps4 fat.id)
+		end	
+
+		assert_redirected_to product_path(@ps4 fat)
 	end	
 end	
