@@ -40,6 +40,7 @@ es:
       login: 'Acceder'
       register: 'Registro'
       logout: 'Cerrar Sesión'
+      favorites: 'Mis favoritos'
   authentication:
     users:
       create:
@@ -84,4 +85,7 @@ es:
     edit:
       title: 'Editar Categoria'
     new:
-      title: 'Nueva Categoria'            
+      title: 'Nueva Categoria' 
+  favorites:
+    index:
+      title: 'Mis favoritos'               
