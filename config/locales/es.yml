@@ -88,4 +88,8 @@ es:
       title: 'Nueva Categoria' 
   favorites:
     index:
-      title: 'Mis favoritos'               
+      title: 'Mis favoritos'
+  user_mailer:
+    welcome:
+      subject: 'Bienvenido a vendelo'
+      welcome_message: 'Hey %{username}, Bienvenido, esperamos que vendas mucho'                   
