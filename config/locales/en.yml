@@ -127,4 +127,8 @@ en:
       title: 'New Category'
   favorites:
     index:
-      title: 'My favorites'    
+      title: 'My favorites'
+  user_mailer:
+    welcome:
+      subject: 'Welcome to sell it'
+      welcome_message: 'Hey %{username}, welcome, we hope you sell a lot'     
