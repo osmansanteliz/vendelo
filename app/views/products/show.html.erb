@@ -1,8 +1,5 @@
-<%= image_tag @product.photo, width: 200 if @product.photo.attached? %>
+<%= render partial: 'product/product_details', locals: { product: @product} %>
 
-<h1 class='titel'><%= @product.titel %></h1>
-<p class='description'><%= @product.description %></p>
-<span class='price'><%= @product.price %>$</span>
 <div>
 	<%= link_to t('.edit'), edit_product_path(@product) if @product.owner? %>
 </div>
@@ -19,3 +16,6 @@
 <%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
 
 <%= render partial: 'favorite', locals: { product: @product } %>
+
+<!-- conexion al websocket con turbo -->
+<%= turbo_stream_from @product %>
